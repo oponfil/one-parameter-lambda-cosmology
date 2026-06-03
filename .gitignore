@@ -1,0 +1,34 @@
+# Редактор / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Артефакты сборки LaTeX (pdflatex + bibtex)
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.toc
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+missfont.log
+
+# PDF: по умолчанию коммитим (удобно для читателей). Чтобы не хранить PDF в git — раскомментируйте:
+# *.pdf
+
+# Временные / служебные
+*.bak
+*~
+
+# ОС
+.DS_Store
+Thumbs.db
+desktop.ini
