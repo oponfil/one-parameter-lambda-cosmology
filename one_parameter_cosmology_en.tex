@@ -1,30 +1,31 @@
 % !TEX root = one_parameter_cosmology_en.tex
-\documentclass[12pt,a4paper]{article}
-\usepackage{cmap}
-\usepackage[margin=1in]{geometry}
-\usepackage{amsmath,amssymb,amsfonts}
-\usepackage[utf8]{inputenc}
+% Formatted for Gravitation and Cosmology (Springer Nature / Pleiades Publishing)
+\documentclass[10pt,a4paper]{article}
+
 \usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}
+\usepackage{amsmath,amssymb,amsfonts}
+\DeclareRobustCommand{\hbar}{\hslash}
+\usepackage[margin=2.5cm]{geometry}
 \usepackage[english]{babel}
 \usepackage[hidelinks]{hyperref}
-\usepackage{comfortaa}
-\renewcommand*\familydefault{\sfdefault}
-\usepackage[x11names]{xcolor}
+\usepackage{titlesec}
+\usepackage[numbers,sort&compress,square]{natbib}
 
-\makeatletter
-\renewcommand{\@makefnmark}{\mbox{\textcolor{white}{\@thefnmark}}}
-\renewcommand{\@makefntext}[1]{\parindent\fnindent\noindent\mbox{}\llap{\@thefnmark}\textcolor{white}{#1}}
-\renewcommand{\footnoterule}{\kern-3pt\color{white}\hrule width 0.4\textwidth height 0.4pt\kern 2.6pt}
-\makeatother
+\titleformat{\section}{\normalfont\bfseries\centering}{\thesection}{0.75em}{}
+\titleformat{\subsection}{\normalfont\bfseries\centering}{\thesubsection}{0.75em}{}
+\titleformat{\subsubsection}{\normalfont\itshape}{\thesubsubsection}{0.75em}{}
 
-\title{\textbf{One-parameter $\Lambda$-cosmology}}
-\author{Oleg Ponfilenok\thanks{Independent researcher; \href{mailto:ponfil@gmail.com}{ponfil@gmail.com}}}
+\title{One-Parameter $\Lambda$-Cosmology}
+
+\author{Oleg Ponfilenok\\
+Independent researcher\\
+\href{mailto:ponfil@gmail.com}{ponfil@gmail.com}}
+
 \date{}
 
 \begin{document}
-
-\pagecolor{black}
-\color{white}
 
 \maketitle
 
@@ -32,7 +33,7 @@
 We distinguish \emph{parameters of the Universe} (what sets our Universe apart from other possible ones) from the \emph{moment of observation} $\tau_0$. In a flat dust universe with $\Lambda$, the Hubble parameter $H(t)=H_\Lambda\coth(\tfrac32 H_\Lambda t)$ and the matter density depend only on $\Lambda$ and the epoch, so $\Omega_{m,0}$ and $H_0$ are a disguised moment $\tau_0$, not separate parameters. The sole second parameter of the Universe in $\Lambda$CDM is the normalization of the photon temperature $T_0$ (entropy): photons do not affect the background dynamics, so the Friedmann equation does not fix their temperature, and in standard cosmology it must be specified by a separate number. We introduce a holographic (vacuum) postulate linking $T_0$ to $\Lambda$ through the equality of the background temperature and the Hawking temperature at the density-equality epoch. This eliminates the second parameter, and the Universe becomes one-parameter: $\text{Universe}\equiv\Lambda$, while $\tau_0$ merely indicates \emph{when} we observe. The relation among independently measured $\Lambda$, $\Omega_{m,0}$, and $T_0$ has been tested with the full covariance of Planck~2018 parameters: deviations are $0.2$--$0.6\%$ at uncertainties of $0.4$--$0.5\%$, i.e.\ the condition agrees with the data at the $0.4$--$1.6\,\sigma$ level. As a consequence, the background temperature, the number of photons, and the matter mass in the causal volume are expressed through a single $\Lambda$; the model's own prediction---the ratio of the number of photons to the matter mass $N_\gamma/(M/m_P)$, derived from $\Lambda$ alone---agrees with the observed photon-to-baryon ratio to better than $1\%$ when external baryonic parameters are supplied. Along the way we obtain a holographic \emph{reformulation} of the cosmological constant problem through the infrared--ultraviolet scale $\bar\lambda_\Lambda=\sqrt{R_\Lambda\,\ell_P}$.
 \end{abstract}
 
-\noindent\textbf{Keywords:} cosmological constant; cosmological constant problem ($10^{120}$); holographic principle; K\'arolyh\'azy uncertainty; one-parameter cosmology; photon-to-matter ratio; photon-to-baryon ratio
+\noindent\textbf{Keywords:} cosmological constant; holographic principle; one-parameter cosmology; CMB temperature; photon-to-baryon ratio; cosmological constant problem
 
 %%% ===================================================================
 \section{Introduction}
@@ -284,9 +285,12 @@ Let us express the tested ratio through the physical densities $\omega_m \equiv 
 The explicit dependence on $h$ has cancelled: the ratio $\mathcal{R}$ depends only on the triplet $(\omega_m,\,\omega_\Lambda,\,T_0)$ with elasticities $+1/3$, $-1/12$, and $-1$ respectively. In particular, with $\omega_m$ held fixed, only the weak dependence $\mathcal{R}\propto\Lambda^{-1/12}$ remains (since $\Lambda \propto \omega_\Lambda$). However, $\omega_m$ itself is measured with finite precision of $0.6$--$0.9\%$ and is strongly anticorrelated with $\omega_\Lambda$ in the Planck chains, so a correct estimate of the uncertainty of $\mathcal{R}$ requires the full covariance of the parameters, not a variation of $\Lambda$ alone.
 
 \paragraph{Error propagation with the full Planck covariance.}
-For each Planck 2018 data combination we take the published marginal constraints on $H_0$ and $\Omega_{m,0}$ (flat model, $\Omega_{\Lambda,0}=1-\Omega_{m,0}$) and recover the correlation coefficient $\rho(\ln h, \ln\Omega_m)$ from the requirement of agreement with the precisely measured combination $\Omega_m h^2$; the recovered covariance is checked against the independently published combination $\Omega_m h^3 = 0.09633 \pm 0.00029$ (predicted values $0.00030$--$0.00035$ agree with the published $0.00029$--$0.00030$). In all three cases $\rho \approx -0.99$. The background temperature is taken as independent: $T_0 = 2.7255 \pm 0.0006$~K~\cite{Fixsen2009}. The uncertainty $\sigma(\ln\mathcal{R})$ is computed in two ways: linear propagation according to Eq.~(\ref{eq:ratio_omegas}) and by Monte Carlo ($4\times10^6$ samples from the bivariate Gaussian distribution of $(\ln h, \ln\Omega_m)$ with the exact nonlinear dependence); both methods agree to the third significant figure. Results:
+For each Planck 2018 data combination we take the published marginal constraints on $H_0$ and $\Omega_{m,0}$ (flat model, $\Omega_{\Lambda,0}=1-\Omega_{m,0}$) and recover the correlation coefficient $\rho(\ln h, \ln\Omega_m)$ from the requirement of agreement with the precisely measured combination $\Omega_m h^2$; the recovered covariance is checked against the independently published combination $\Omega_m h^3 = 0.09633 \pm 0.00029$ (predicted values $0.00030$--$0.00035$ agree with the published $0.00029$--$0.00030$). In all three cases $\rho \approx -0.99$. The background temperature is taken as independent: $T_0 = 2.7255 \pm 0.0006$~K~\cite{Fixsen2009}. The uncertainty $\sigma(\ln\mathcal{R})$ is computed in two ways: linear propagation according to Eq.~(\ref{eq:ratio_omegas}) and by Monte Carlo ($4\times10^6$ samples from the bivariate Gaussian distribution of $(\ln h, \ln\Omega_m)$ with the exact nonlinear dependence); both methods agree to the third significant figure. Results are summarized in Table~\ref{tab:planck}:
 
-\begin{center}
+\begin{table}[htbp]
+\centering
+\caption{Statistical test of the holographic condition on Planck 2018 data combinations}
+\label{tab:planck}
 \begin{tabular}{l c c c}
 \hline
 Planck 2018 data & $\mathcal{R}-1$ & $\sigma(\mathcal{R})$ & Significance \\
@@ -296,7 +300,7 @@ TT,TE,EE+lowE+lensing & $-0.31\%$ & $0.47\%$ & $0.7\,\sigma$ \\
 TT,TE,EE+lowE+lensing+BAO & $-0.59\%$ & $0.37\%$ & $1.6\,\sigma$ \\
 \hline
 \end{tabular}
-\end{center}
+\end{table}
 
 \paragraph{Conclusion.}
 On all three data combinations the holographic condition $\mathcal{R}=1$ agrees with the observations: deviations are $0.4\,\sigma$, $0.7\,\sigma$, and $1.6\,\sigma$ (two-sided $p$-values $0.68$, $0.50$, and $0.11$). Note that with the addition of BAO the central deviation grows ($-0.23\% \to -0.59\%$) while the uncertainty shrinks, so agreement is least confident for the most precise data combination. The test will become substantially stricter with future measurements of $\omega_m$ and $\omega_\Lambda$ (DESI~\cite{DESI2024SV}, Euclid~\cite{Laureijs2011,Euclid2020}, CMB-S4~\cite{Abazajian2016}): for instance, keeping the Planck+BAO central values and halving the uncertainties would imply a discrepancy at the $>3\,\sigma$ level and falsification of the model.
@@ -358,9 +362,12 @@ The model gives precise values of the cosmological parameters for our epoch. The
 \begin{equation}
 \sinh(\tau_0) = \sinh(\tau_{\max})\left(\frac{T_{\mathrm{dS}}}{T_0}\right)^{3/2}, \qquad \tau_0 = 1.18.
 \end{equation}
-Substituting into the evolution formulae:
+Substituting into the evolution formulae, we obtain the values listed in Table~\ref{tab:observables}:
 
-\begin{center}
+\begin{table}[htbp]
+\centering
+\caption{Observable parameters of the present epoch: model predictions and observations}
+\label{tab:observables}
 \begin{tabular}{l c c}
 \hline
 Parameter & Model & Observations \\
@@ -374,7 +381,7 @@ $\Omega_{m,0}$ & $0.31$ & $0.315 \pm 0.007$ \\
 $\Omega_{\Lambda,0}$ & $0.69$ & $0.685 \pm 0.007$ \\
 \hline
 \end{tabular}
-\end{center}
+\end{table}
 
 The only input of our epoch is the temperature $T_0$, which fixes $\tau_0$; all the other quantities in the table are predictions. In particular, the matter fraction $\Omega_{m,0} = \operatorname{sech}^2(\tau_0) \approx 0.31$ is not fitted but follows from $\tau_0$ and agrees with the observed value $0.315 \pm 0.007$. The curve $T(\tau)$ itself is set by $\Lambda$ alone (the normalization $a(\tau_{\max})=1$ at $T(\tau_{\max})=T_{\mathrm{dS}}$), so the choice of $T_0$ merely indicates a point on this curve---the moment at which we observe.
 
@@ -495,7 +502,23 @@ In its background dynamics the model is as simple as a non-rotating Schwarzschil
 while the moment of observation $\tau_0$ merely indicates \emph{when} we observe it.
 
 
-\bibliographystyle{unsrt}
+\section*{Acknowledgments}
+
+Not applicable.
+
+\section*{Funding}
+
+The author received no specific funding for this work.
+
+\section*{Compliance with Ethical Standards}
+
+This article does not contain any studies with human participants or animals performed by the author.
+
+\section*{Conflict of Interest}
+
+The author declares that he has no conflict of interest.
+
+\bibliographystyle{gravcos}
 \bibliography{refs}
 
 \end{document}
