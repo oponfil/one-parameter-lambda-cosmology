@@ -29,22 +29,22 @@
 \maketitle
 
 \begin{abstract}
-The standard $\Lambda$CDM model specifies the evolution of the Universe through a set of supposedly independent parameters: $H_0$, $\Omega_{m,0}$, $\Omega_{\Lambda,0}$, $T_0$. We show that a flat dust universe with a cosmological constant is completely determined by the cosmological constant $\Lambda$ and a dimensionless moment of observation $\tau_0$.
-Introducing the dimensionless time $\tau = \frac{3}{2}H_\Lambda t$ (where $H_\Lambda = c/R_\Lambda$, $R_\Lambda = \sqrt{3/\Lambda}$), the entire evolution and the observables at the epoch $\tau_0$ are written through the single function $\sinh(\tau)$: the scale factor, the Hubble parameter, the component densities, the background temperature, and the total causal radius.
-The vacuum postulate $\bar\lambda_\Lambda = \delta R_{\max} = \xi\,(R_{\max}\ell_P^2)^{1/3} = \sqrt{R_\Lambda\,\ell_P} = r_s$ at the density-equality epoch $\tau_{m\Lambda}$ uniquely determines $\xi = \sqrt[3]{2/I}$, where $I = \Gamma(\tfrac{1}{6})\,\Gamma(\tfrac{1}{3})/(3\sqrt{\pi}) \approx 2.804$.
-For a given CMB temperature $T_0$ (which fixes the moment of observation $\tau_0$) and baryon fraction $\Omega_{b,0}/\Omega_{m,0}$, the model reproduces: $H_0 \approx 67$~km/s/Mpc, the matter fraction $\Omega_{m,0} \approx 0.31$, and the photon-to-baryon ratio $N_\gamma/N_b \approx 1.6 \times 10^9$. In addition, it provides a holographic reformulation of the cosmological constant problem, expressing the observed $\rho_\Lambda$ through the infrared--ultraviolet scale $\bar\lambda_\Lambda = \sqrt{R_\Lambda\,\ell_P}$ instead of the Planck scale, thereby removing the naive $10^{120}$ discrepancy.
-The Universe turns out to be as simple as a non-rotating, uncharged black hole.
+We distinguish \emph{parameters of the Universe} (what sets our Universe apart from other possible ones) from the \emph{moment of observation} $\tau_0$. In a flat dust universe with $\Lambda$, the Hubble parameter $H(t)=H_\Lambda\coth(\tfrac32 H_\Lambda t)$ and the matter density depend only on $\Lambda$ and the epoch, so $\Omega_{m,0}$ and $H_0$ are a disguised moment $\tau_0$, not separate parameters. The sole second parameter of the Universe in $\Lambda$CDM is the normalization of the photon temperature $T_0$ (entropy): photons do not affect the background dynamics, so the Friedmann equation does not fix their temperature, and in standard cosmology it must be specified by a separate number. We introduce a holographic (vacuum) postulate linking $T_0$ to $\Lambda$ through the equality of the background temperature and the Hawking temperature at the density-equality epoch. This eliminates the second parameter, and the Universe becomes one-parameter: $\text{Universe}\equiv\Lambda$, while $\tau_0$ merely indicates \emph{when} we observe. The relation among independently measured $\Lambda$, $\Omega_{m,0}$, and $T_0$ has been tested with the full covariance of Planck~2018 parameters: deviations are $0.2$--$0.6\%$ at uncertainties of $0.4$--$0.5\%$, i.e.\ the condition agrees with the data at the $0.4$--$1.6\,\sigma$ level. As a consequence, the background temperature, the number of photons, and the matter mass in the causal volume are expressed through a single $\Lambda$; the model's own prediction---the ratio of the number of photons to the matter mass $N_\gamma/(M/m_P)$, derived from $\Lambda$ alone---agrees with the observed photon-to-baryon ratio to better than $1\%$ when external baryonic parameters are supplied. Along the way we obtain a holographic \emph{reformulation} of the cosmological constant problem through the infrared--ultraviolet scale $\bar\lambda_\Lambda=\sqrt{R_\Lambda\,\ell_P}$.
 \end{abstract}
 
-\noindent\textbf{Keywords:} cosmological constant; vacuum fluctuations; K\'arolyh\'azy uncertainty; holographic principle; photon-to-baryon ratio
+\noindent\textbf{Keywords:} cosmological constant; cosmological constant problem ($10^{120}$); holographic principle; K\'arolyh\'azy uncertainty; one-parameter cosmology; photon-to-matter ratio; photon-to-baryon ratio
 
 %%% ===================================================================
-\section{Introduction: redundancy of the \texorpdfstring{$\Lambda$CDM}{ΛCDM} parameters}
+\section{Introduction}
 %%% ===================================================================
 
-The standard $\Lambda$CDM model~\cite{Planck2018} describes the present state of the Universe through a set of observational parameters at the current epoch: the Hubble parameter $H_0$, the density fractions $\Omega_{m,0}$, $\Omega_{\Lambda,0}$, and the microwave-background temperature $T_0$. These quantities are presented as initial conditions~--- the data one must measure in order to fix a specific universe out of the family of possible solutions of the Friedmann equations.
+The standard $\Lambda$CDM model~\cite{Planck2018} describes the present state of the Universe through a set of observational parameters at the current epoch: the Hubble parameter $H_0$, the density fractions $\Omega_{m,0}$, $\Omega_{\Lambda,0}$, and the microwave-background temperature $T_0$. Before counting parameters, let us separate two kinds: \emph{parameters of the Universe}---what sets our Universe apart from other possible ones and does not depend on the epoch---and the \emph{moment of observation} $\tau_0$, which merely indicates where we stand on an already fixed history.
 
-In this work we show that these parameters are redundant: a flat $\Lambda$CDM universe is fully described by the cosmological constant $\Lambda$ and the dimensionless moment of time $\tau_0$ at which we observe.
+\paragraph{How many parameters fix the Universe.} We show that in these terms a gravitationally--thermally coupled Universe (flat dust $+\,\Lambda\,+$ photons) is specified by \emph{one} parameter of the Universe. First, \emph{matter is not a separate parameter}. For flat dust with $\Lambda$, the Hubble parameter $H(t)=H_\Lambda\coth(\tfrac{3}{2}H_\Lambda t)$ is a fixed function depending only on $\Lambda$ and time, and the matter density at any moment equals $\rho_m=3H^2/8\pi G-\rho_\Lambda$---i.e.\ it is determined by $\Lambda$ and the epoch. Therefore two flat dust$+\Lambda$ universes with the same $\Lambda$ are the same Universe at different moments, and $\Omega_{m,0}$ (as well as $H_0$, $t_0$) is a disguised moment of observation $\tau_0$, not an independent parameter of the Universe. This holds in standard cosmology as well. Second, \emph{the second parameter of the Universe in $\Lambda$CDM is the normalization of the photon temperature}: photons do not affect the background dynamics today, so the Friedmann equation does not fix their temperature, and the value of $T_0$ (equivalently---entropy, the number of photons per comoving volume) must be specified by a separate number. Two universes with the same $\Lambda$ and the same matter history but different $T_0$ are different universes, both admissible in $\Lambda$CDM. Thus $\Lambda$CDM requires \emph{two} parameters of the Universe ($\Lambda$ and the normalization of $T_0$) plus the moment $\tau_0$.
+
+\paragraph{Goal of this work.} We show that a holographic (vacuum) postulate links the normalization of the photon temperature to $\Lambda$ and thereby eliminates precisely the second parameter of the Universe. The Universe then becomes strictly one-parameter: $\text{Universe}\equiv\Lambda$, while $\tau_0$ remains merely an indication of the moment of observation.
+
+\paragraph{Relation to prior work.} The use of K\'arolyh\'azy uncertainty~\cite{Karolyhazy1966} for the scale of spacetime fluctuations goes back to Maziashvili~\cite{Maziashvili2007} and to \emph{agegraphic} dark-energy models of Cai~\cite{Cai2007} and Wei--Cai~\cite{WeiCai2008}, where the same estimate $\delta t\sim t_P^{2/3}t^{1/3}$ sets the infrared vacuum cutoff, but the infrared scale is the age or conformal time of the Universe, and the dark-energy density \emph{evolves} ($w\neq-1$). We borrow only this mathematical device and the idea of IR--UV cutoff, while our background dynamics remains standard flat $\Lambda$CDM: $\Lambda$ and $\rho_\Lambda$ are constant in time, $w=-1$, and the Friedmann equation for dust and $\Lambda$ is unchanged. The idea of infrared--ultraviolet vacuum cutoff with an entropic bound goes back to Cohen--Kaplan--Nelson~\cite{Cohen1999}, was developed in Li's holographic dark energy~\cite{Li2004} (see also the critique of Hubble-scale cutoff~\cite{Hsu2004}, generalizations~\cite{NojiriOdintsov2006}, and the review~\cite{WangWangLi2017}), and the relation $\rho_\Lambda\approx\sqrt{\rho_{\mathrm{UV}}\rho_{\mathrm{IR}}}$ to Padmanabhan~\cite{Padmanabhan2005}. The idea of expressing the CMB temperature through the geometric mean of the Hawking and Planck temperatures was developed by Tatum, Seshavatharam, and Lakshminarayanan~\cite{Tatum2015} and by Haug and Tatum~\cite{Haug2024}. Our distinction from agegraphic and holographic models of \emph{dynamical} dark energy is twofold: (i)~our infrared scale is not the age or the Hubble radius, but $\bar\lambda_\Lambda=\sqrt{R_\Lambda\,\ell_P}$, fixed by the holographic Hawking condition at the density-equality epoch; (ii)~the postulate does not replace $\Lambda$ with a time-varying density, but gives a holographic \emph{reformulation} of the observed value of $\Lambda$ and a link to the photon sector. Our distinction from the ``CMB as geometric mean'' line is that we \emph{derive} the corresponding temperature ratio from the Friedmann equations and this condition, rather than postulating it.
 
 %%% ===================================================================
 \section{Notation and fundamental scales}
@@ -57,7 +57,7 @@ Let us introduce the key notation, defined by the single parameter $\Lambda$ and
 \item $R_\Lambda = \sqrt{3/\Lambda}$~--- the de Sitter radius;
 \item $H_\Lambda = c/R_\Lambda$~--- the asymptotic Hubble constant;
 \item $\rho_\Lambda = \Lambda c^2/(8\pi G)$~--- the dark-energy density;
-\item $T_{\mathrm{dS}} = \hbar H_\Lambda/(2\pi k_B)$~--- the de Sitter horizon temperature;
+\item $T_{\mathrm{dS}} = \hbar H_\Lambda/(2\pi k_B)$~--- the de Sitter horizon temperature~\cite{GibbonsHawking1977};
 \item $\ell_P = \sqrt{\hbar G/c^3}$~--- the Planck length;
 \item $m_P = \sqrt{\hbar c/G}$~--- the Planck mass.
 \end{itemize}
@@ -72,7 +72,7 @@ The dimensionless time:
 \label{sec:sinh}
 %%% ===================================================================
 
-For a flat universe filled with dust and a cosmological constant, the exact solution of the Friedmann equation in the dimensionless time $\tau=\tfrac{3}{2}H_\Lambda t$ is~\cite{Ryden2017} (see ibid.\ $\S$~5.4.2, Eq.~(5.101)). Since after recombination $T \propto a^{-1}$, the entire dynamics of the Universe is thereby expressed through the single function $\sinh(\tau)$ (the coefficients $A$ and $B$ will be substituted in \S~\ref{sec:taumax}):
+For a flat universe filled with dust and a cosmological constant, the exact solution of the Friedmann equation in the dimensionless time $\tau=\tfrac{3}{2}H_\Lambda t$ is a standard textbook result~\cite{Ryden2017} (see ibid.\ $\S$~5.4.2, Eq.~(5.101)); we use it as auxiliary apparatus, not as an independent result. Since after recombination $T \propto a^{-1}$, the entire dynamics of the Universe is thereby expressed through the single function $\sinh(\tau)$ (the coefficients $A$ and $B$ will be substituted in \S~\ref{sec:taumax}):
 \begin{align}
 a(\tau) &= A\,\sinh^{2/3}(\tau), \label{eq:a_sinh} \\[6pt]
 H(\tau) &= H_\Lambda \cdot \coth(\tau), \label{eq:hubble} \\[6pt]
@@ -91,7 +91,9 @@ Define the \emph{total causal radius} of the Universe as the sum of the particle
 \begin{equation}
 R = R_{\mathrm{p}} + R_{\mathrm{e}} = c\,a\int_0^{\infty}\frac{\mathrm{d}t'}{a(t')}.
 \end{equation}
-The physical meaning of this quantity is \emph{the maximal causally accessible scale over the entire span of observation}. The particle horizon $R_{\mathrm{p}}$ sets what a comoving observer is able to see (the past light cone, $\int_0^{t}\mathrm{d}t'/a$), while the event horizon $R_{\mathrm{e}}$ sets what the observer can ever causally influence in the future (the future light cone, $\int_t^{\infty}\mathrm{d}t'/a$). Their sum is the full comoving region accessible to the observer over the whole history of the Universe, rather than the instantaneous size of the visible part at a fixed epoch. In a dust universe with $\Lambda$ both integrals converge, so $R$ is finite and well defined.
+The physical meaning of this quantity is \emph{the maximal causally accessible scale over the entire span of observation}. The particle horizon $R_{\mathrm{p}}=c\,a\,\chi_{\mathrm{p}}$ sets what a comoving observer is able to see (the past light cone, $\chi_{\mathrm{p}}=\int_0^{t}\mathrm{d}t'/a$), while the event horizon $R_{\mathrm{e}}=c\,a\,\chi_{\mathrm{e}}$ sets what the observer can ever causally influence in the future (the future light cone, $\chi_{\mathrm{e}}=\int_t^{\infty}\mathrm{d}t'/a$). Their sum is the full causal reach from $t=0$ to $t=\infty$. In comoving coordinates $\chi\equiv\int_0^{\infty}\mathrm{d}t'/a$ does not depend on the epoch of observation $t$: with $\chi_{\mathrm{p}}=\int_0^{t}\mathrm{d}t'/a$ and $\chi_{\mathrm{e}}=\int_t^{\infty}\mathrm{d}t'/a$ we have $\mathrm{d}\chi_{\mathrm{p}}/\mathrm{d}t=1/a$ and $\mathrm{d}\chi_{\mathrm{e}}/\mathrm{d}t=-1/a$, so $\mathrm{d}\chi/\mathrm{d}t=0$ (the contributions of the past and future cones compensate). The physical radius $R=c\,a\,\chi$ grows with $a(t)$. In a dust universe with $\Lambda$ both integrals converge, so $\chi$ is finite and well defined.
+
+\paragraph{Why $R = R_{\mathrm{p}}+R_{\mathrm{e}}$.} Separately, $\chi_{\mathrm{p}}$ grows and $\chi_{\mathrm{e}}$ decreases; only $\chi=\chi_{\mathrm{p}}+\chi_{\mathrm{e}}=\int_0^{\infty}\mathrm{d}t'/a$ is \emph{invariant} with respect to the moment at which we stand on an already fixed FRW history (while $R_{\mathrm{p}}=c\,a\,\chi_{\mathrm{p}}$ and $R_{\mathrm{e}}=c\,a\,\chi_{\mathrm{e}}$ change with the epoch). This is not an ``arbitrary normalization'' but the full causal scale over the entire time axis; in the literature~\cite{Davis2004} $R_{\mathrm{p}}$ and $R_{\mathrm{e}}$ are usually discussed separately because they answer different questions (what is \emph{visible} now and what is \emph{accessible} in the future), not the question of an invariant of the entire causal history. The physical radius $R=c\,a\,\chi$ and the volume $V=\tfrac{4}{3}\pi R^3$ at the present epoch change with the scale factor, but $\chi$ is constant, and therefore $M=\rho_m V$ and $N_\gamma\propto T^3 V$ are true invariants of the content. The sole remaining caveat is geometric: we ascribe $M$ and $N_\gamma$ to a \emph{sphere} of radius $R$, whereas the causal structure is set by light cones; for comparison with estimates of the ``observable'' Universe~\cite{EganLineweaver2010}, where only $R_{\mathrm{p}}$ is taken, an explicit distinction of definitions is required.
 As shown in the previous section~(\S~\ref{sec:sinh}, Eq.~(\ref{eq:a_sinh})), $a(\tau)=A\,\sinh^{2/3}(\tau)$. Substituting $\mathrm{d}t=(2R_\Lambda/3c)\,\mathrm{d}\tau$,
 \begin{equation}
 \begin{aligned}
@@ -130,6 +132,7 @@ At the present epoch ($\Omega_{\Lambda,0}/\Omega_{m,0}=\sinh^2\tau_0=2.17$, $\ta
 
 %%% ===================================================================
 \section{Accounting for the radiation era: correction to the integral \texorpdfstring{$I$}{I}}
+\label{sec:radcorr}
 %%% ===================================================================
 
 In the previous sections the total causal radius was computed within the dust model (a universe filled only with dust and a cosmological constant), which is a good approximation for late epochs. However, at the early stages of the evolution of the Universe radiation dominated (relativistic particles: CMB photons and neutrinos). Let us account for the influence of the radiation era on the causal radius and the integral $I$.
@@ -169,10 +172,11 @@ which is $1.37\%$ smaller than the base value $I \approx 2.8044$ obtained withou
 Thus the influence of the radiation era leads to a small contraction of the total causal horizon of the Universe at early stages by about $1.4\%$, while the qualitative picture of one-parameter cosmology and of mass constancy is preserved.
 
 %%% ===================================================================
-\section{Total dust mass}
+\section{Dust mass in the causal volume}
+\label{sec:mass}
 %%% ===================================================================
 
-Let us show that the total mass of dust matter in the Universe is constant and determined only by $\Lambda$.
+Let us show that the dust-matter mass in the causal volume $V(\tau)=\tfrac{4}{3}\pi R^3(\tau)$, defined above, is constant in time and determined only by $\Lambda$; constancy is a consequence of the cancellation of the dependences $\rho_m\propto\sinh^{-2}$ and $V\propto\sinh^{2}$, not a separate conservation law.
 
 The dust-matter density $\rho_m$ in a flat universe with a cosmological constant decreases inversely with volume: $\rho_m(\tau) = \rho_\Lambda / \sinh^2(\tau)$. The causal volume of the Universe is defined through the causal radius $R(\tau)$ from Eq.~(\ref{eq:radius}):
 \begin{equation}
@@ -189,18 +193,21 @@ Substituting $\rho_\Lambda = \frac{3 c^2}{8\pi G R_\Lambda^2}$, we obtain
 \end{equation}
 where $M_\Lambda = c^2 R_\Lambda / (2G) \approx 1.1 \times 10^{53}$~kg is the Schwarzschild mass for the de Sitter radius $R_\Lambda$, and $I^3 \approx 22.05$ is a dimensionless constant. With $R_\Lambda \approx 1.65 \times 10^{26}$~m we obtain $M \approx 2.4 \times 10^{54}$~kg.
 
-All time-dependent factors, as well as the density fractions $\Omega_m$ and $\Omega_\Lambda$, have cancelled. Thus the total dust-matter mass of the Universe is strictly constant in time and uniquely determined by the cosmological constant $\Lambda$.
+All time-dependent factors, as well as the density fractions $\Omega_m$ and $\Omega_\Lambda$, have cancelled. Thus the dust-matter mass in the causal volume is strictly constant in time and uniquely determined by the cosmological constant $\Lambda$ (under the adopted definition of the volume through $R=R_{\mathrm{p}}+R_{\mathrm{e}}$).
+
+\paragraph{Connection with the mass--horizon tradition and large numbers.} The basic factor $M_\Lambda = c^2 R_\Lambda/(2G)$ belongs to the long-known class of mass--horizon relations: the mass of the observable Universe is close to its own Schwarzschild radius, $R_s = 2GM/c^2 \approx R$, which in dimensional form gives the ``Hoyle--Carvalho formula'' $M \sim c^3/(GH)$~\cite{Carvalho1995} and independent estimates of the total mass $\sim10^{53}$~kg~\cite{Valev2014}. Expressing the content of the Universe in Planck units ($M/m_P$, number of nucleons $\sim10^{80}$) goes back to Dirac's large-numbers hypothesis~\cite{Dirac1938} and Eddington's number, systematized in the analysis of large-number coincidences~\cite{CarrRees1979}. Our construction differs in two details: (i)~the scale taken is the de Sitter radius $R_\Lambda=\sqrt{3/\Lambda}$ (tied to $\Lambda$, not to the instantaneous Hubble radius), and (ii)~a factor $I^3\approx22$ from the causal-horizon integral appears, so that $M = M_\Lambda I^3 \approx 2.4\times10^{54}$~kg somewhat exceeds the standard ``Hubble mass'' $\sim10^{53}$~kg.
 
 
 %%% ===================================================================
 \section{The vacuum postulate and the holographic condition}
+\label{sec:vacuum}
 %%% ===================================================================
 
 Let us introduce a hypothesis relating the maximal causal scale to the characteristic wavelength of vacuum fluctuations.
 
 \paragraph{Reduced wavelength.} When comparing with the Schwarzschild radius $r_s$ it is natural to use the \emph{reduced} wavelength $\bar\lambda \equiv \lambda/(2\pi)$: the condition $2\pi r = \lambda$ is written as $r = \bar\lambda$. The full wavelength is $\lambda = 2\pi\bar\lambda$.
 
-\paragraph{K\'arolyh\'azy uncertainty.} For a spatial region of size $R$, the quantum uncertainty of length (caused by metric fluctuations) is generically estimated as $\delta R \sim (R \cdot \ell_P^2)^{1/3}$. In our model the dimensionless coefficient $\xi$ fixes this estimate by an exact equality; for the maximal causal horizon $R_{\max}$ we define
+\paragraph{K\'arolyh\'azy uncertainty.} For a spatial region of size $R$, the quantum uncertainty of length (caused by metric fluctuations) is generically estimated as $\delta R \sim (R \cdot \ell_P^2)^{1/3}$~\cite{Karolyhazy1966,Maziashvili2007}; the same estimate underlies agegraphic dark-energy models~\cite{Cai2007,WeiCai2008}, where the role of the scale $R$ is played by the age or conformal time of the Universe. In our model the dimensionless coefficient $\xi$ fixes this estimate by an exact equality; for the maximal causal horizon $R_{\max}$ we define
 \begin{equation}
 \delta R_{\max} = \xi \cdot (R_{\max} \cdot \ell_P^2)^{1/3}.
 \end{equation}
@@ -216,8 +223,8 @@ The connection of the scale $\bar\lambda_\Lambda = \sqrt{R_\Lambda\,\ell_P}$ wit
 \begin{equation}
 \bar\lambda_\Lambda = \delta R_{\max} = \xi \cdot (R_{\max} \cdot \ell_P^2)^{1/3} = \sqrt{R_\Lambda \cdot \ell_P} = r_s \approx 5.2 \times 10^{-5}~\text{m}.
 \end{equation}
-The full wavelength is $\lambda_\Lambda = 2\pi\bar\lambda_\Lambda \approx 3.3 \times 10^{-4}$~m. The reduced length $\bar\lambda_\Lambda$ is close to the Planck--Einstein scale $\ell_{\mathrm{PE}} = (\hbar G / c^3 \Lambda)^{1/4} \approx 37~\mu$m (ratio $\bar\lambda_\Lambda/\ell_{\mathrm{PE}} \approx 1.4$).
-As a \emph{hypothetical} illustration we note that Koch et al.~\cite{Koch1982} measured quantum (zero-point) noise in resistively shunted Josephson junctions with a spectrum consistent with vacuum fluctuations up to $\nu \sim 0.6$~THz, while Beck and de~Matos~\cite{Beck2007} predict a spectral cutoff near the Planck--Einstein scale ($\nu \sim 1.3$~THz). Our value $\bar\lambda_\Lambda \approx 52~\mu$m corresponds to $\nu \approx 0.92$~THz, between these two scales, whereas $\ell_{\mathrm{PE}} \approx 37~\mu$m would correspond to $\approx 1.3$~THz. No direct experimental confirmation of such a cutoff at $\gtrsim1$~THz, including in HTS junctions, exists yet; we regard this only as a guide and not as observational proof of the model.
+The full wavelength is $\lambda_\Lambda = 2\pi\bar\lambda_\Lambda \approx 3.3 \times 10^{-4}$~m. The reduced length $\bar\lambda_\Lambda$ is close to the Planck--Einstein scale $\ell_{\mathrm{PE}} = (\hbar G / c^3 \Lambda)^{1/4} \approx 37~\mu$m.
+As a \emph{hypothetical} illustration we note that Koch et al.~\cite{Koch1982} measured quantum (zero-point) noise in resistively shunted Josephson junctions with a spectrum consistent with vacuum fluctuations up to $\nu \sim 0.6$~THz, while Beck and de~Matos~\cite{Beck2007} predict a spectral cutoff near the Planck--Einstein scale. Our value $\bar\lambda_\Lambda \approx 52~\mu$m corresponds to $\nu \approx 0.92$~THz, between these two scales, whereas $\ell_{\mathrm{PE}} \approx 37~\mu$m would correspond to $\approx 1.3$~THz. No direct experimental confirmation of such a cutoff at $\nu\gtrsim1$~THz, including in HTS junctions, exists yet; we regard this only as a guide and not as observational proof of the model.
 
 \paragraph{The holographic condition.}
 To compute $\xi$, let us pass to the special epoch $\tau_{m\Lambda}$ of equality of the matter and dark-energy densities:
@@ -253,43 +260,52 @@ Hence the single dimensionless coefficient of the model is determined analytical
 \boxed{\xi = \sqrt[3]{\frac{2}{I}} = \sqrt[3]{\frac{6\sqrt{\pi}}{\Gamma(\tfrac{1}{6})\,\Gamma(\tfrac{1}{3})}} \approx 0.894.}
 \end{equation}
 
-The idea of expressing the CMB temperature through the geometric mean of the Hawking and Planck temperatures is close to the recent approaches of Haug and Tatum~\cite{Haug2024}, who relate the temperature scales of the cosmological and Planck horizons. However, in our work this relation is derived from the Friedmann equations and the holographic condition at the density-equality epoch $\tau_{m\Lambda}$.
+The idea of expressing the CMB temperature through the geometric mean of the Hawking and Planck temperatures is close to the approaches of Tatum et al.~\cite{Tatum2015} and Haug and Tatum~\cite{Haug2024}, who relate the temperature scales of the cosmological and Planck horizons. However, in our work this relation is derived from the Friedmann equations and the holographic condition at the density-equality epoch $\tau_{m\Lambda}$. The idea of linking the density (or temperature) of dark energy to Hawking radiation from the cosmological horizon under Planck-scale UV cutoff was also put forward earlier~\cite{LeeLeeKim2010}; the thermodynamics of the de Sitter horizon and the role of order-unity factors in it are analyzed in detail by Volovik~\cite{Volovik2022}.
 
 %%% ===================================================================
-\section{Numerical estimate and empirical verification}
+\section{Numerical estimate and statistical test}
 \label{sec:empirical}
 %%% ===================================================================
 
 Substituting the data of the Planck 2018 mission~\cite{Planck2018} shows close agreement of the temperatures:
 \begin{itemize}
-\item Planck+lensing+BAO ($\Lambda \approx 1.106 \times 10^{-52}$~m$^{-2}$): $T_{\mathrm{Hawking}} \approx 3.532$~K, $T_{m\Lambda} \approx 3.553$~K (deviation \textbf{0.59\%}).
-\item Planck-only ($\Lambda \approx 1.089 \times 10^{-52}$~m$^{-2}$): $T_{\mathrm{Hawking}} \approx 3.518$~K, $T_{m\Lambda} \approx 3.529$~K (deviation \textbf{0.31\%}).
+\item TT,TE,EE+lowE ($\Lambda \approx 1.084 \times 10^{-52}$~m$^{-2}$): $T_{\mathrm{Hawking}} \approx 3.514$~K, $T_{m\Lambda} \approx 3.522$~K (deviation $-0.23\%$);
+\item TT,TE,EE+lowE+lensing ($\Lambda \approx 1.089 \times 10^{-52}$~m$^{-2}$): $T_{\mathrm{Hawking}} \approx 3.518$~K, $T_{m\Lambda} \approx 3.529$~K (deviation $-0.31\%$);
+\item TT,TE,EE+lowE+lensing+BAO ($\Lambda \approx 1.106 \times 10^{-52}$~m$^{-2}$): $T_{\mathrm{Hawking}} \approx 3.532$~K, $T_{m\Lambda} \approx 3.553$~K (deviation $-0.59\%$).
 \end{itemize}
 
-\paragraph{Sensitivity analysis with respect to the precision of $\Lambda$.}
-The measured value of the cosmological constant $\Lambda$ has a relative experimental uncertainty of about $\delta\Lambda/\Lambda \approx 1.92\%$ (according to Planck 2018: $\Lambda = (1.089 \pm 0.021) \times 10^{-52}$~m$^{-2}$).
-As $\Lambda$ changes, the ratio of the dark-energy and matter densities at the present epoch $\Omega_{\Lambda,0} / \Omega_{m,0}$ changes. Since the physical matter density is measured very precisely ($\Omega_{m,0} H_0^2 = \text{const}$), the condition of equality of the dust and vacuum densities $\rho_m(z_{m\Lambda}) = \rho_\Lambda$ requires $(1+z_{m\Lambda})^3 = \rho_\Lambda/\rho_{m,0} \propto \Lambda$. Thus a change in $\Lambda$ directly shifts the redshift of the equality epoch $z_{m\Lambda} \propto \Lambda^{1/3}$. Correspondingly, the CMB temperature at the equality epoch changes as $T_{m\Lambda} \propto 1+z_{m\Lambda} \propto \Lambda^{1/3}$.
-
-At the same time the Hawking temperature scales as $T_{m\Lambda\mathrm{, Hawking}} \propto R_\Lambda^{-1/2} \propto \Lambda^{1/4}$. Because both temperatures grow with increasing $\Lambda$ with close exponents, their ratio $\frac{T_{m\Lambda\mathrm{, Hawking}}}{T_{m\Lambda}} \propto \Lambda^{-1/12}$ has an extremely low sensitivity to variations of $\Lambda$.
-
-The sensitivity index (elasticity) of the temperature ratio with respect to a change in $\Lambda$ is only
+\paragraph{What the tested ratio depends on.}
+Let us express the tested ratio through the physical densities $\omega_m \equiv \Omega_{m,0}h^2$ and $\omega_\Lambda \equiv \Omega_{\Lambda,0}h^2$, where $h = H_0/(100~\text{km/s/Mpc})$. Since $R_\Lambda = c/(H_{100}\sqrt{\omega_\Lambda})$ (where $H_{100} = 100$~km/s/Mpc) and $T_{m\Lambda} = T_0\,(\omega_\Lambda/\omega_m)^{1/3}$, we have the exact identity
 \begin{equation}
-\frac{\mathrm{d}\ln(T_{m\Lambda\mathrm{, Hawking}}/T_{m\Lambda})}{\mathrm{d}\ln\Lambda} = -\frac{1}{12} \approx -0.083.
+\mathcal{R} \equiv \frac{T_{m\Lambda\mathrm{, Hawking}}}{T_{m\Lambda}}
+= \frac{\hbar c}{4\pi k_B T_0}\left(\frac{H_{100}}{c\,\ell_P}\right)^{1/2}\frac{\omega_m^{1/3}}{\omega_\Lambda^{1/12}}.
+\label{eq:ratio_omegas}
 \end{equation}
-Owing to such a small sensitivity, given the experimental uncertainty of the cosmological constant $\delta\Lambda/\Lambda \approx 1.92\%$, the corresponding uncertainty in determining the temperatures is
-\begin{itemize}
-\item for the Hawking temperature: $\delta T_{\mathrm{Hawking}} / T_{\mathrm{Hawking}} = \frac{1}{4} \frac{\delta\Lambda}{\Lambda} \approx 0.48\%$ (absolute uncertainty $\approx 0.017$~K);
-\item for the equality temperature: $\delta T_{m\Lambda} / T_{m\Lambda} = \frac{1}{3} \frac{\delta\Lambda}{\Lambda} \approx 0.64\%$ (absolute uncertainty $\approx 0.022$~K);
-\item for their ratio: $\delta (T_{\mathrm{Hawking}}/T_{m\Lambda}) / (T_{\mathrm{Hawking}}/T_{m\Lambda}) = \frac{1}{12} \frac{\delta\Lambda}{\Lambda} \approx 0.16\%$.
-\end{itemize}
+The explicit dependence on $h$ has cancelled: the ratio $\mathcal{R}$ depends only on the triplet $(\omega_m,\,\omega_\Lambda,\,T_0)$ with elasticities $+1/3$, $-1/12$, and $-1$ respectively. In particular, with $\omega_m$ held fixed, only the weak dependence $\mathcal{R}\propto\Lambda^{-1/12}$ remains (since $\Lambda \propto \omega_\Lambda$). However, $\omega_m$ itself is measured with finite precision of $0.6$--$0.9\%$ and is strongly anticorrelated with $\omega_\Lambda$ in the Planck chains, so a correct estimate of the uncertainty of $\mathcal{R}$ requires the full covariance of the parameters, not a variation of $\Lambda$ alone.
 
-Note that the observed discrepancy between the temperatures is only \textbf{0.31\%} (for Planck-only) and \textbf{0.59\%} (for the combined Planck+lensing+BAO data). This discrepancy (absolute difference $\Delta T \approx 0.011$--$0.021$~K) is substantially smaller than the experimental uncertainty in determining the temperatures themselves from $\Lambda$ ($\approx 0.017$--$0.022$~K). The fact that the actual discrepancy is smaller than the measurement uncertainty, while the sensitivity of the temperature ratio to variations of $\Lambda$ is extremely low, convincingly demonstrates the physical consistency, robustness, and observational support of the proposed holographic condition.
+\paragraph{Error propagation with the full Planck covariance.}
+For each Planck 2018 data combination we take the published marginal constraints on $H_0$ and $\Omega_{m,0}$ (flat model, $\Omega_{\Lambda,0}=1-\Omega_{m,0}$) and recover the correlation coefficient $\rho(\ln h, \ln\Omega_m)$ from the requirement of agreement with the precisely measured combination $\Omega_m h^2$; the recovered covariance is checked against the independently published combination $\Omega_m h^3 = 0.09633 \pm 0.00029$ (predicted values $0.00030$--$0.00035$ agree with the published $0.00029$--$0.00030$). In all three cases $\rho \approx -0.99$. The background temperature is taken as independent: $T_0 = 2.7255 \pm 0.0006$~K~\cite{Fixsen2009}. The uncertainty $\sigma(\ln\mathcal{R})$ is computed in two ways: linear propagation according to Eq.~(\ref{eq:ratio_omegas}) and by Monte Carlo ($4\times10^6$ samples from the bivariate Gaussian distribution of $(\ln h, \ln\Omega_m)$ with the exact nonlinear dependence); both methods agree to the third significant figure. Results:
+
+\begin{center}
+\begin{tabular}{l c c c}
+\hline
+Planck 2018 data & $\mathcal{R}-1$ & $\sigma(\mathcal{R})$ & Significance \\
+\hline
+TT,TE,EE+lowE & $-0.23\%$ & $0.55\%$ & $0.4\,\sigma$ \\
+TT,TE,EE+lowE+lensing & $-0.31\%$ & $0.47\%$ & $0.7\,\sigma$ \\
+TT,TE,EE+lowE+lensing+BAO & $-0.59\%$ & $0.37\%$ & $1.6\,\sigma$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\paragraph{Conclusion.}
+On all three data combinations the holographic condition $\mathcal{R}=1$ agrees with the observations: deviations are $0.4\,\sigma$, $0.7\,\sigma$, and $1.6\,\sigma$ (two-sided $p$-values $0.68$, $0.50$, and $0.11$). Note that with the addition of BAO the central deviation grows ($-0.23\% \to -0.59\%$) while the uncertainty shrinks, so agreement is least confident for the most precise data combination. The test will become substantially stricter with future measurements of $\omega_m$ and $\omega_\Lambda$ (DESI~\cite{DESI2024SV}, Euclid~\cite{Laureijs2011,Euclid2020}, CMB-S4~\cite{Abazajian2016}): for instance, keeping the Planck+BAO central values and halving the uncertainties would imply a discrepancy at the $>3\,\sigma$ level and falsification of the model.
 
 Note that within the proposed one-parameter cosmology itself the temperature ratio is identically equal to unity for any universe:
 \begin{equation}
 \frac{T_{m\Lambda\mathrm{, Hawking}}}{T_{m\Lambda}} = \frac{I\,\xi^3}{2} \equiv 1.
 \end{equation}
-It does not depend on the value of $\Lambda$. The dependence $\propto \Lambda^{-1/12}$ arises only under external verification through the standard multi-parameter $\Lambda$CDM, where the cosmological constant and the matter density ($\Omega_{m,0} H_0^2$) are treated as independent parameters. The smallness of the exponent ($-1/12$) guarantees a high robustness of this equality against experimental uncertainties.
+It does not depend on the value of $\Lambda$. The dependence~(\ref{eq:ratio_omegas}) on $(\omega_m, \omega_\Lambda, T_0)$ arises only under external verification through the standard multi-parameter $\Lambda$CDM, where the cosmological constant, the matter density, and the background temperature are treated as independent parameters. The smallness of the elasticities with respect to the densities ($+1/3$ and $-1/12$) makes the equality robust against uncertainties of individual parameters, but, as shown above, does not remove the need for a full covariance analysis.
 
 %%% ===================================================================
 \section{Maximal causal radius and the epoch \texorpdfstring{$\tau_{\max}$}{τ\_max}}
@@ -338,7 +354,7 @@ The corresponding maximal physical causal radius of the Universe at the moment $
 \section{Observable parameters of our epoch}
 %%% ===================================================================
 
-The model gives precise values of the cosmological parameters for our epoch. The cosmological constant $\Lambda$ fully sets the temperature-evolution curve $T(\tau)$ (through the normalization $a(\tau_{\max})=1$ at $T(\tau_{\max})=T_{\mathrm{dS}}$, see \S~\ref{sec:taumax}). The moment of observation $\tau_0$ is fixed by the single scale measured today~--- the CMB temperature $T_0 = 2.7255$~K~\cite{Planck2018}. From the temperature-evolution law~(\ref{eq:temp}), $T(\tau_0) = T_{\mathrm{dS}}\,[\sinh(\tau_{\max})/\sinh(\tau_0)]^{2/3} = T_0$, whence
+The model gives precise values of the cosmological parameters for our epoch. The cosmological constant $\Lambda$ fully sets the temperature-evolution curve $T(\tau)$ (through the normalization $a(\tau_{\max})=1$ at $T(\tau_{\max})=T_{\mathrm{dS}}$, see \S~\ref{sec:taumax}). The moment of observation $\tau_0$ is fixed by the single scale measured today---the CMB temperature $T_0 = 2.7255$~K~\cite{Planck2018}. From the temperature-evolution law~(\ref{eq:temp}), $T(\tau_0) = T_{\mathrm{dS}}\,[\sinh(\tau_{\max})/\sinh(\tau_0)]^{2/3} = T_0$, whence
 \begin{equation}
 \sinh(\tau_0) = \sinh(\tau_{\max})\left(\frac{T_{\mathrm{dS}}}{T_0}\right)^{3/2}, \qquad \tau_0 = 1.18.
 \end{equation}
@@ -360,36 +376,40 @@ $\Omega_{\Lambda,0}$ & $0.69$ & $0.685 \pm 0.007$ \\
 \end{tabular}
 \end{center}
 
-The only input of our epoch is the temperature $T_0$, which fixes $\tau_0$; all the other quantities in the table are predictions. In particular, the matter fraction $\Omega_{m,0} = \operatorname{sech}^2(\tau_0) \approx 0.31$ is not fitted but follows from $\tau_0$ and agrees with the observed value $0.315 \pm 0.007$. The curve $T(\tau)$ itself is set by $\Lambda$ alone (the normalization $a(\tau_{\max})=1$ at $T(\tau_{\max})=T_{\mathrm{dS}}$), so the choice of $T_0$ merely indicates a point on this curve~--- the moment at which we observe.
+The only input of our epoch is the temperature $T_0$, which fixes $\tau_0$; all the other quantities in the table are predictions. In particular, the matter fraction $\Omega_{m,0} = \operatorname{sech}^2(\tau_0) \approx 0.31$ is not fitted but follows from $\tau_0$ and agrees with the observed value $0.315 \pm 0.007$. The curve $T(\tau)$ itself is set by $\Lambda$ alone (the normalization $a(\tau_{\max})=1$ at $T(\tau_{\max})=T_{\mathrm{dS}}$), so the choice of $T_0$ merely indicates a point on this curve---the moment at which we observe.
 
 %%% ===================================================================
-\section{Conservation of particle number in the causal volume}
+\section{Ratio of the number of photons to the matter mass}
+\label{sec:photon_matter}
 %%% ===================================================================
 
-The total number of photons and baryons in the causal volume $V(\tau) = \frac{4\pi}{3}\,R(\tau)^3$ is constant in time. Indeed:
-\begin{itemize}
-\item the dust density falls as $\rho_m \propto \sinh^{-2}(\tau)$;
-\item the photon density $n_\gamma \propto T^3 \propto a^{-3} \propto \sinh^{-2}(\tau)$;
-\item the causal volume grows as $V \propto R^3 \propto \sinh^2(\tau)$.
-\end{itemize}
-All dependences on $\tau$ cancel mutually, and the absolute particle numbers in the causal volume are pure numbers, determined only by $R_\Lambda / \ell_P$.
+\paragraph{What the model knows and what it does not.} Let us stress from the outset: this model describes only the \emph{total matter mass} in the causal volume and contains no baryon physics. It has no baryogenesis, no separation of matter into baryonic and non-baryonic components, and (apart from the small radiation correction of \S\ref{sec:radcorr}) does not treat the early radiation era---the count starts from the matter-domination epoch. The natural predictable quantity is therefore the \emph{ratio of the number of photons to the matter mass} (not the photon-to-baryon ratio): the model does not distinguish which part of the matter is baryonic and which is dark.
+
+The total number of photons and the total matter mass in the causal volume $V(\tau) = \frac{4\pi}{3}\,R(\tau)^3$ are constant in time, since $n_\gamma\propto T^3\propto\sinh^{-2}(\tau)$, $\rho_m\propto\sinh^{-2}(\tau)$, and $V\propto\sinh^2(\tau)$, and the dependences on $\tau$ cancel. The absolute values are determined only by $R_\Lambda/\ell_P$.
 
 \subsection{Number of photons}
+At $\tau_{\max}$: $N_\gamma=n_\gamma(T_{\mathrm{dS}})\,\tfrac{4\pi}{3}R_{\max}^3$; with $n_\gamma=\tfrac{2\zeta(3)}{\pi^2}(k_BT/\hbar c)^3$, $T_{\mathrm{dS}}=\hbar c/(2\pi k_B R_\Lambda)$ and $R_{\max}=\tfrac{I}{2}\sqrt{R_\Lambda^3/\ell_P}$ (\S\,\ref{sec:taumax}) we obtain
 \begin{equation}
 \boxed{N_\gamma = \frac{\zeta(3)\,I^3}{24\pi^4} \left(\frac{R_\Lambda}{\ell_P}\right)^{3/2} \approx 3.73 \times 10^{89}.} \label{eq:n_gamma}
 \end{equation}
+$N_\gamma$ depends \emph{only} on $\Lambda$ (through $R_\Lambda/\ell_P$) and pure constants under the adopted temperature normalization (\S\,\ref{sec:taumax}) and definition of the causal volume.
 
-\subsection{Number of baryons}
+\subsection{Ratio of the number of photons to the matter mass}
+The model's own dimensionless quantity is the ratio of the number of photons to the matter mass expressed in Planck masses $m_P$ (i.e.\ in purely fundamental units, without any particle mass). Using $M = M_\Lambda I^3$ (\S\,\ref{sec:mass}) and $M/m_P = \tfrac{I^3}{2}(R_\Lambda/\ell_P)$, we obtain
 \begin{equation}
-\boxed{N_b = \frac{\Omega_b}{\Omega_m}\,\frac{I^3}{2}\,\frac{m_P}{m_p}\,\frac{R_\Lambda}{\ell_P} \approx 2.30 \times 10^{80},} \label{eq:n_b}
+\boxed{\frac{N_\gamma}{M/m_P} = \frac{\zeta(3)}{12\pi^4}\,\sqrt{\frac{R_\Lambda}{\ell_P}} \approx 3.3 \times 10^{27}.} \label{eq:ratio_particles}
 \end{equation}
-with $\Omega_{b,0}/\Omega_{m,0} \approx 0.156$ (from the Planck 2018 data~\cite{Planck2018}) and $m_b \approx m_p$, the proton mass.
+\emph{This is the model's own prediction}: the ratio of the number of photons to the matter mass is derived from a single $\Lambda$ and the fundamental constants $(\hbar,c,G,k_B)$.
 
-\subsection{Photon-to-baryon ratio}
+\paragraph{Connection with the observed photon-to-baryon ratio.} The model contains no baryons and does not predict them; therefore the transition to the observed photon-to-baryon ratio $\eta^{-1}_{\mathrm{obs}}\approx1.63\times10^9$ ($\eta\approx6.1\times10^{-10}$~\cite{Planck2018}) requires \emph{two external} quantities from the baryon sector: (a)~the baryon fraction in matter $\Omega_{b,0}/\Omega_{m,0}$ and (b)~the proton mass $m_p$, in whose units the number of baryons is counted, $N_b = (\Omega_b/\Omega_m)\,M/m_p$. Then
 \begin{equation}
-\boxed{\frac{N_\gamma}{N_b} = \frac{\zeta(3)}{12\pi^4}\,\frac{\Omega_m}{\Omega_b}\,\frac{m_p}{m_P}\,\sqrt{\frac{R_\Lambda}{\ell_P}} \approx 1.62 \times 10^{9}.} \label{eq:ratio_particles}
+\frac{N_\gamma}{N_b} = \frac{N_\gamma}{M/m_P}\cdot\frac{m_p}{m_P}\cdot\frac{\Omega_m}{\Omega_b}.
 \end{equation}
-This ratio is in excellent agreement with the observed value of the baryon asymmetry of the Universe $\eta_{\mathrm{obs}}^{-1} \approx 1.63 \times 10^9$ (corresponding to $\eta \approx 6.12 \times 10^{-10}$~\cite{Planck2018}) to better than $1\%$.
+Substituting $m_p/m_P\approx7.7\times10^{-20}$ and the measured fraction $\Omega_{b,0}/\Omega_{m,0}\approx0.156$~\cite{Planck2018}, we obtain
+\begin{equation}
+\boxed{\frac{N_\gamma}{N_b} \approx 1.62\times10^{9},}
+\end{equation}
+which agrees with the observed $\eta^{-1}_{\mathrm{obs}}\approx1.63\times10^9$ to better than $1\%$.
 
 %%% ===================================================================
 \section{Holographic reformulation of the cosmological constant problem}
@@ -413,7 +433,7 @@ Expressing from this $G R_\Lambda^2 = \bar\lambda_\Lambda^4 c^3/\hbar$ and subst
 \end{equation}
 Thus the exact analytic coefficient is
 \begin{equation}
-\boxed{C = \frac{3}{8\pi} \approx 0.1194.}
+\boxed{C = \frac{3}{8\pi}.}
 \end{equation}
 Consequently, the vacuum density is expressed through the reduced wavelength $\bar\lambda_\Lambda$ as follows:
 \begin{equation}
@@ -425,39 +445,54 @@ Passing to the vacuum energy density $E_\Lambda = \rho_\Lambda c^2$, we obtain t
 \end{equation}
 Numerically, with $\bar\lambda_\Lambda \approx 52~\mu$m (from the Planck data), these formulae reproduce the observed $\rho_\Lambda$.
 
-This relation \emph{reformulates} the cosmological constant problem in a holographic way: the observed $\rho_\Lambda$ is naturally expressed through the infrared--ultraviolet scale $\bar\lambda_\Lambda = \sqrt{R_\Lambda\,\ell_P}$, and the naive $10^{120}$ discrepancy that arises when cutting off at the Planck scale $\ell_P$ does not appear. We emphasize that $\Lambda$ remains the single input parameter (formula~(\ref{eq:rho_lambda_final}) is an exact rewriting of $\rho_\Lambda = 3c^2/(8\pi G R_\Lambda^2)$); however, the cutoff scale $\bar\lambda_\Lambda$ is \emph{not arbitrary}. It is uniquely set by the K\'arolyh\'azy uncertainty: $\bar\lambda_\Lambda = \delta R_{\max} = \xi\,(R_{\max}\ell_P^2)^{1/3}$ is the minimal geometrically resolvable length for the maximal causal horizon $R_{\max}$. The vacuum is cut off not at the Planck length $\ell_P$, but at this minimal scale of geometry admissible for a region of size $R_{\max}$~--- which agrees with the approach of Cohen--Kaplan--Nelson~\cite{Cohen1999} and Padmanabhan~\cite{Padmanabhan2005}, and is precisely why it reproduces the observed $\rho_\Lambda$.
+This relation \emph{reformulates} the cosmological constant problem~\cite{Weinberg1989} in a holographic way, but does not resolve it from first principles: the observed $\rho_\Lambda$ is naturally expressed through the infrared--ultraviolet scale $\bar\lambda_\Lambda = \sqrt{R_\Lambda\,\ell_P}$, and the naive $10^{120}$ discrepancy that arises when cutting off at the Planck scale $\ell_P$ does not appear. We emphasize that $\Lambda$ remains the single input parameter (formula~(\ref{eq:rho_lambda_final}) is an exact rewriting of $\rho_\Lambda = 3c^2/(8\pi G R_\Lambda^2)$); however, the cutoff scale $\bar\lambda_\Lambda$ is \emph{not arbitrary}. It is uniquely set by the K\'arolyh\'azy uncertainty: $\bar\lambda_\Lambda = \delta R_{\max} = \xi\,(R_{\max}\ell_P^2)^{1/3}$ is the minimal geometrically resolvable length for the maximal causal horizon $R_{\max}$. The vacuum is cut off not at the Planck length $\ell_P$, but at this minimal scale of geometry admissible for a region of size $R_{\max}$---which agrees with the approach of Cohen--Kaplan--Nelson~\cite{Cohen1999}, holographic dark energy~\cite{Li2004,WangWangLi2017}, and Padmanabhan~\cite{Padmanabhan2005}, and is precisely why it reproduces the observed $\rho_\Lambda$.
 
-Note that in modern theoretical physics there is no single commonly accepted value for the dimensionless coefficient relating the vacuum energy density to the characteristic quantum-cutoff wavelength $\lambda$. Usually in quantum-field-theory computations this relation has the form $E_{\text{vac}} \sim \hbar c / \lambda^4$, where the coefficient $C$ depends on the chosen regularization scheme. For instance, for a sharp momentum cutoff of the free electromagnetic field at the scale $k_{\text{max}} = \pi/\lambda$ (corresponding to the Nyquist limit for a lattice step $\lambda/2$) the coefficient is $C = \pi^2/4 \approx 2.47$, whereas at $k_{\text{max}} = \pi/(2\lambda)$ it equals $C = \pi^2/64 \approx 0.154$, and for a scalar field at $k_{\text{max}} = 1/\lambda$ it equals $C = 1/(8\pi^2) \approx 0.013$. In geometrically bounded systems, such as a metallic cube of side $L$ in the Casimir effect, the vacuum energy density is determined by the exact coefficient $C \approx 0.092$. Our analytically derived coefficient $C = 3/(8\pi) \approx 0.119$ naturally falls within the physical range of QFT and the Casimir effect ($10^{-2} \div 10^{-1}$), while not being a fitting parameter. In contrast to the dimensional scale of Beck and de Matos~\cite{Beck2007}, where the coefficient is taken equal to unity by definition (which gives the scale $37~\mu$m and a noise cutoff frequency $\approx 1.3$~THz), our value $\bar\lambda_\Lambda \approx 52~\mu$m corresponds to $\nu \approx 0.92$~THz, between the upper limit of the Koch et al.~\cite{Koch1982} measurements ($\sim 0.6$~THz) and the Beck--de~Matos~\cite{Beck2007} prediction ($\sim 1.3$~THz). If future noise measurements in HTS junctions confirm a spectral cutoff in this range and link it to vacuum fluctuations~--- which remains an unverified hypothesis~--- our scale would lie in the same order of magnitude; however, we do not rely on such experiments as confirmation of the model.
+Note that in modern theoretical physics there is no single commonly accepted value for the dimensionless coefficient relating the vacuum energy density to the characteristic quantum-cutoff wavelength $\lambda$. Usually in quantum-field-theory computations this relation has the form $E_{\text{vac}} \sim \hbar c / \lambda^4$, where the coefficient $C$ depends on the chosen regularization scheme. For instance, for a sharp momentum cutoff of the free electromagnetic field at the scale $k_{\text{max}} = \pi/\lambda$ (corresponding to the Nyquist limit for a lattice step $\lambda/2$) the coefficient is $C = \pi^2/4 \approx 2.47$, whereas at $k_{\text{max}} = \pi/(2\lambda)$ it equals $C = \pi^2/64 \approx 0.154$, and for a scalar field at $k_{\text{max}} = 1/\lambda$ it equals $C = 1/(8\pi^2) \approx 0.013$. In geometrically bounded systems, such as a metallic cube of side $L$ in the Casimir effect, the vacuum energy density is determined by the exact coefficient $C \approx 0.092$. Our analytically derived coefficient $C = 3/(8\pi) \approx 0.119$ naturally falls within the physical range of QFT and the Casimir effect ($10^{-2} \div 10^{-1}$), while not being a fitting parameter. In contrast to the dimensional scale of Beck and de Matos~\cite{Beck2007}, where the coefficient is taken equal to unity by definition (which gives the scale $37~\mu$m and a noise cutoff frequency $\approx 1.3$~THz), our value $\bar\lambda_\Lambda \approx 52~\mu$m corresponds to $\nu \approx 0.92$~THz, between the upper limit of the Koch et al.~\cite{Koch1982} measurements ($\sim 0.6$~THz) and the Beck--de~Matos~\cite{Beck2007} prediction ($\sim 1.3$~THz). If future noise measurements in HTS junctions confirm a spectral cutoff in this range and link it to vacuum fluctuations---which remains an unverified hypothesis---our scale would lie in the same order of magnitude; however, we do not rely on such experiments as confirmation of the model.
+
+%%% ===================================================================
+\section{Falsifiability of the model}
+\label{sec:falsif}
+%%% ===================================================================
+
+The background dynamics of the model is identical to flat $\Lambda$CDM, so it does not differ from the standard model in expansion curves. The physical content of the one-parameter construction is concentrated in the holographic condition (\S\,\ref{sec:vacuum}): it is this that makes the model falsifiable.
+
+The holographic condition requires that at the density-equality epoch $\tau_{m\Lambda}$ the background temperature $T_{m\Lambda}$ coincide with the Hawking temperature $T_{m\Lambda\mathrm{, Hawking}}$ for the Schwarzschild radius $r_s=\bar\lambda_\Lambda$. In terms of the temperature ratio, which in the model is identically unity,
+\begin{equation}
+\frac{T_{m\Lambda\mathrm{, Hawking}}}{T_{m\Lambda}} = \frac{I\,\xi^3}{2} \equiv 1,
+\end{equation}
+this is the testable statement separating our construction from an arbitrary reparameterization of $\Lambda$CDM. The equality links the normalization of the photon temperature to $\Lambda$ and reduces to relation~(\ref{eq:ratio_omegas}) among independently measured $\omega_m$, $\omega_\Lambda$, and $T_0$.
+
+On the available Planck data it holds within $0.4$--$1.6\,\sigma$ with full accounting of the parameter covariance (\S\,\ref{sec:empirical}); the greatest tension ($1.6\,\sigma$, $p=0.11$) comes from the most precise combination Planck+lensing+BAO. The test has a clear prospect of tightening: halving the uncertainties of $\omega_m$ and $\omega_\Lambda$ (DESI~\cite{DESI2024SV}, Euclid~\cite{Laureijs2011,Euclid2020}, CMB-S4~\cite{Abazajian2016}) while keeping the present Planck+BAO central values would make the deviation of $\mathcal{R}$ from unity exceed $3\,\sigma$. If future data show such a mismatch, the holographic condition will be refuted and the model as a whole---falsified.
 
 %%% ===================================================================
 \section{Conclusion}
 %%% ===================================================================
 
-Under the vacuum postulate $\bar\lambda_\Lambda = \delta R_{\max} = \xi\,(R_{\max}\ell_P^2)^{1/3} = \sqrt{R_\Lambda\,\ell_P} = r_s$ and the holographic condition at the density-equality epoch ($\xi = \sqrt[3]{2/I}$), the flat dust $\Lambda$CDM universe turns out to be strictly one-parameter in its dynamics. Below we discuss the consequences for the observable quantities and for the classical cosmological problems.
+Let us summarize the main result: \emph{a gravitationally--thermally coupled Universe is specified by one parameter of the Universe---the cosmological constant $\Lambda$}. For this statement to be precise, we distinguish parameters of the Universe from the moment of observation and separate an identity (background reparameterization) from the physical postulate that carries the novelty.
 
-\subsection{One-parameter character}
+\subsection{One parameter of the Universe instead of two}
 
-The single fundamental parameter $\Lambda$ sets the dust mass, $H(\tau)$, the fractions $\Omega_m(\tau)$ and $\Omega_\Lambda(\tau)$, the causal radius $R(\tau)$, the CMB temperature $T(\tau)$, the numbers $N_\gamma$ and $N_b$, as well as $\tau_{\max} \approx 105$. The four customary ``inputs'' of $\Lambda$CDM~--- $H_0$, $\Omega_{m,0}$, $\Omega_{\Lambda,0}$, $T_0$~--- are not independent initial conditions but the values of the same functions at the point $\tau = \tau_0$. Instead of four free parameters, two quantities remain: $\Lambda$ and the moment of observation $\tau_0$.
+Let us distinguish parameters that fix the Universe from the moment of observation $\tau_0$. In standard flat $\Lambda$CDM the Universe is fixed by \emph{two} parameters: (1)~$\Lambda$ and (2)~the normalization of the photon temperature (entropy). Matter is not a separate parameter: $H(t)=H_\Lambda\coth(\tfrac32 H_\Lambda t)$ depends only on $\Lambda$, and $\rho_m=3H^2/8\pi G-\rho_\Lambda$ is determined by $\Lambda$ and the epoch, so $\Omega_{m,0}$, $H_0$, $t_0$ are a disguised moment $\tau_0$, not a parameter of the Universe. The background record through $\sinh(\tau)$ with the mapping $(H_0,\Omega_{m,0})\leftrightarrow(\Lambda,\tau_0)$ is an exact reparameterization, common with standard $\Lambda$CDM, and by itself does not reduce the number of parameters. What reduces it is the \emph{holographic postulate} (next subsection): it ties the normalization of the photon temperature to $\Lambda$, eliminating the second parameter of the Universe. One remains: $\text{Universe}\equiv\Lambda$, while $\tau_0$ is merely the moment of observation.
+
+\subsection{What eliminates the second parameter: the link $T_0$ to $\Lambda$}
+
+The holographic condition eliminates the second parameter of the Universe: it links the normalization of the photon temperature ($T_0$) to $\Lambda$---a link absent in standard cosmology---and therefore allows one to express $T(\tau)$, the total number of photons in the causal volume $N_\gamma\propto(R_\Lambda/\ell_P)^{3/2}$, and the matter mass in the causal volume $M=M_\Lambda I^3$ through a single $\Lambda$, as well as to fix $\tau_{\max}\approx105$. This relation reduces to equality~(\ref{eq:ratio_omegas}) among independently measured $\omega_m$, $\omega_\Lambda$, and $T_0$ and has been tested on Planck data with full accounting of the parameter covariance: deviations of $0.2$--$0.6\%$ at uncertainties of $0.4$--$0.5\%$, i.e.\ agreement at the $0.4$--$1.6\,\sigma$ level (\S\,\ref{sec:empirical}); the $O(1)$ structure of the link is meanwhile selected by the data, and future measurements will make the test stricter. The falsifiability of the model as a whole is determined by the testability of this equality (\S\,\ref{sec:falsif}).
 
 \subsection{The cosmological constant problem}
 
-The standard $10^{120}$ discrepancy between the naive vacuum estimate (with the Planck scale of fluctuations) and the observed density $\rho_\Lambda$ is \emph{reformulated} rather than resolved from first principles in our construction: if the characteristic scale of vacuum fluctuations is taken to be not $\ell_P$ but $\bar\lambda_\Lambda = \sqrt{R_\Lambda\,\ell_P} = r_s \approx 52~\mu$m, then the observed $\rho_\Lambda$ is reproduced automatically. This is a holographic (IR--UV) reformulation in the spirit of~\cite{Cohen1999,Padmanabhan2005}, and the cutoff scale is not chosen arbitrarily: it is set by the K\'arolyh\'azy uncertainty $\bar\lambda_\Lambda = \delta R_{\max}$~--- the minimal resolvable geometry of the maximal causal horizon. Therefore the cutoff of the vacuum at this scale, rather than at the Planck scale, is a consequence of the quantum uncertainty of spatial length, not a fit.
+The standard $10^{120}$ discrepancy~\cite{Weinberg1989} between the naive vacuum estimate (with the Planck scale of fluctuations) and the observed density $\rho_\Lambda$ is \emph{reformulated}, not resolved from first principles, in our construction: if the characteristic scale of vacuum fluctuations is taken to be not $\ell_P$ but $\bar\lambda_\Lambda = \sqrt{R_\Lambda\,\ell_P} = r_s \approx 52~\mu$m, then the observed $\rho_\Lambda$ is reproduced automatically. This is a holographic (IR--UV) reformulation in the spirit of~\cite{Cohen1999,Li2004,Padmanabhan2005,WangWangLi2017}, and the cutoff scale is not chosen arbitrarily: it is set by the K\'arolyh\'azy uncertainty $\bar\lambda_\Lambda = \delta R_{\max}$---the minimal resolvable geometry of the maximal causal horizon. Therefore the cutoff of the vacuum at this scale, rather than at the Planck scale, is a consequence of the quantum uncertainty of spatial length. We stress once more: this is a reformulation, not a derivation of $\rho_\Lambda$ from first principles---$\Lambda$ remains an input parameter.
 
-\subsection{The photon-to-baryon ratio}
+\subsection{Photon-to-matter ratio}
 
-From the constancy of the total numbers of photons and baryons in the causal volume (formulae~(\ref{eq:n_gamma})--(\ref{eq:n_b})) follows the photon-to-baryon ratio~(\ref{eq:ratio_particles}). It is derived analytically from $\Lambda$ through $R_\Lambda = \sqrt{3/\Lambda}$ and is not an independent parameter of the model: for fixed $\Lambda$ and the measured baryon fraction $\Omega_{b,0}/\Omega_{m,0}$ (Planck~2018) we obtain $N_\gamma/N_b \approx 1.62 \times 10^9$, in agreement with the observed baryon asymmetry $\eta_{\mathrm{obs}}^{-1} \approx 1.63 \times 10^9$ ($\eta \approx 6.1 \times 10^{-10}$) to better than $1\%$.
-
-\subsection{The fine-tuning problem}
-
-The problem is absent: for fixed $\Lambda$ there is no arbitrary choice of $H_0$, $\Omega_{m,0}$, or $\Omega_{\Lambda,0}$~--- they are uniquely determined by $\tau_0$ (and conversely, from the measured $\Omega_{m,0}$ one finds $\tau_0$). Likewise $T_0$, $N_\gamma$, and $N_b$ are fixed.
+The model contains no baryon physics and does not distinguish baryonic from non-baryonic matter; its own prediction is the ratio of the number of photons to the \emph{mass} of matter $N_\gamma/(M/m_P) \approx 3.3\times10^{27}$, derived from a single $\Lambda$ and fundamental constants, without the proton mass or the baryon fraction (\S\,\ref{sec:photon_matter}). To compare with the observed photon-\emph{baryon} ratio $\eta_{\mathrm{obs}}^{-1}\approx1.63\times10^9$, two external baryonic factors must be added---the proton mass $m_p$ and the baryon fraction $\Omega_b/\Omega_m$; with them $N_\gamma/N_b\approx1.62\times10^9$ agrees with the observation to better than $1\%$. This is agreement, not a prediction: the model fixes from $\Lambda$ only the ratio to the matter mass, while the baryon sector remains external.
 
 \subsection{Analogy with a black hole}
 
-In its dynamics the Universe is as simple as a non-rotating Schwarzschild black hole, specified by a single mass $M$: here this role is played by $\Lambda$. The epoch of observation $\tau_0$ plays the role of ``where on the orbit we look''~--- not new physics, but a choice of moment on an already-fixed solution.
-
+In its background dynamics the model is as simple as a non-rotating Schwarzschild black hole, specified by a single mass: here that role is played by $\Lambda$, and the epoch of observation $\tau_0$ is the choice of moment on an already fixed solution. We offer this analogy as an illustrative metaphor, not as a strict statement. With this in mind, the outcome of the work can be written as follows: a gravitationally--thermally coupled Universe is specified by the sole parameter of the Universe,
 \begin{equation}
-\boxed{\text{Universe} \equiv \Lambda.}
+\boxed{\text{Universe} \equiv \Lambda,}
 \end{equation}
+while the moment of observation $\tau_0$ merely indicates \emph{when} we observe it.
 
 
 \bibliographystyle{unsrt}
